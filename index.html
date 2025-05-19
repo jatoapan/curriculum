@@ -1,41 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>TuNombre</h1>
-        <p>TuCargo | TuEmail | TuTeléfono</p>
+        <h1>My Page</h1>
+        <p>This is my page.</p>
+        <h1>José Toapanta</h1>
+        <p>Computer Science Student | TuEmail | TuTeléfono</p>
     </header>
     <nav>
         <ul>
+            <li><a href="#perfil">Perfil</a></li>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#lenguajes">Lenguajes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#referencias">Referencias</a></li>
         </ul>
     </nav>
     <main>
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil" width="150" height="150">
+        </section>
         <section id="resumen">
-            <h2>Resumenes</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
+            <h2>Resumen</h2>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
+
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
         </section>
+        <section id="lenguajes">
+            <h2>Lenguajes</h2>
+            <table style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <th></th>
+                    <th>Python</th>
+                    <th>Java</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <th>Nivel</th>
+                    <td>Avanzado</td>
+                    <td>Intermedio</td>
+                    <td>Básico</td>
+                </tr>
+                <tr>
+                    <th>Experiencia (años)</th>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <ol>
+                <li>Título del Proyecto 1</li>
+                <li>Título del Proyecto 2</li>
+                <li>Título del Proyecto 3</li>
+                <li>Título del Proyecto 4</li>
+            </ol>
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/x8LW_IH8VTY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.0246055158512!2d-79.96748473049516!3d-2.1479345999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c7e7e2e7e3%3A0x7e1e9b7c9e1b7e1e!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716138000000!5m2!1ses!2sec"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <section id="formulario">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required style="width:100%; margin-bottom:12px;">
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required style="width:100%; margin-bottom:12px;">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oportunidad de trabajo</option>
+                    <option value="pasantia">Oportunidad de pasantia</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefiere ser contactado?</legend>
+                    <label><input type="radio" name="contacto" value="email" required> Email</label>
+                    <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
+                    <label><input type="radio" name="contacto" value="whatsapp" required> WhatsApp</label>
+                </fieldset>
+
+                <label for="intereses">Áreas de interés:</label>
+                <select id="intereses" name="intereses[]" multiple required style="width:100%; margin-bottom:12px;">
+                    <option value="desarrollo">Desarrollo Web</option>
+                    <option value="datos">Ciencia de Datos</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                    <option value="iot">IoT</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required
+                    style="width:100%; margin-bottom:12px;"></textarea>
+
+                <button type="submit" style="width:100%;">Enviar</button>
+                        
+            </form>
+        </section>
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <article>
+                <blockquote>
+                    "José demostró gran responsabilidad y compromiso en todos los proyectos asignados."
+                </blockquote>
+                <p>
+                    <span>María Pérez</span><br>
+                    Gerente de Proyectos en Empresa X<br>
+                    Trabajó con José durante dos años en el área de desarrollo de software, destacando su capacidad para
+                    resolver problemas y trabajar en equipo.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Siempre mostró iniciativa y creatividad en la solución de retos técnicos."
+                </blockquote>
+                <p>
+                    <span>Carlos Gómez</span><br>
+                    Líder Técnico en Soluciones TI<br>
+                    Colaboró con José en varios proyectos de integración de sistemas, resaltando su profesionalismo y
+                    habilidades técnicas.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Su actitud positiva y disposición para aprender lo convierten en un valioso miembro del equipo."
+                </blockquote>
+                <p>
+                    <span>Ana Torres</span><br>
+                    Jefa de Innovación en Tech Innovators<br>
+                    Supervisó a José en prácticas profesionales, donde demostró adaptabilidad y excelentes habilidades
+                    de comunicación.
+                </p>
+            </article>
         </section>
     </main>
     <footer>
