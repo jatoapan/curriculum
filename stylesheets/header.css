@@ -1,0 +1,61 @@
+.header-placeholder {
+    width: 100%;
+    height: calc(1.75 * var(--header-height));
+}
+
+header {
+    top: 0; left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    min-height: var(--header-height);
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--header-bg-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: 100;
+}
+
+.header-title a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Nunito";
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    transition: all 0.5s ease;
+}
+
+.header-title a:hover {
+    transform: scale(1.1);
+}
+
+.header-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.header-nav-item {
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+}
+
+.header-nav-item:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
