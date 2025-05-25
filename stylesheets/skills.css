@@ -1,4 +1,6 @@
 .skills {
+    display: flex; 
+    flex-direction: column; /*combinacion de flex y column es para evitar meter padding debajo del titulo*/
     justify-content: center;
     align-items: center;
     padding: 0% 10% 4rem; /*up left/right bottom*/
@@ -9,9 +11,8 @@
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    color: var(--first-color);
+    color: var(--third-color);
     text-align: center;
-    padding-bottom: 4rem;
 }
 
 .skills-sections {
@@ -24,19 +25,18 @@
 
 .skill-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .skill-subtitle {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--third-color);
+    color: var(--fifth-color);
     text-align: center;
-    padding-bottom: 2rem;
 }
 
 .skills-list {
@@ -50,7 +50,7 @@
 
 .skill-item {
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border: 2px solid; 
     transition: all 0.5s ease;
 }
@@ -61,7 +61,7 @@
 
 .skill-item:hover{
     transform: scale(1.1);
-    background-color: var(--header-bg-color);
+    background-color: var(--second-color);
 }
 
 .skill-item i {

@@ -1,11 +1,10 @@
 :root {
     --header-height: 80px;
-    --header-bg-color: #0f0e17;
-    --bg-color: black;
-    --border-color: #0f0e17;
-    --first-color: rgba(229, 49, 112, 1);
-    --second-color: rgba(229, 49, 112, 0.5);
-    --third-color: white;
+    --first-color: black;
+    --second-color: #0f0e17;
+    --third-color: rgba(229, 49, 112, 1);
+    --fourth-color: rgba(229, 49, 112, 0.5);
+    --fifth-color: white;
     --color-power-bi: #F2C811;
     --color-mysql: #4479A1;
     --color-postgresql: #4169E1;

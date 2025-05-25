@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0% 10% 4rem; /*up left/right bottom*/
     gap: 4rem 10%; /*row column*/
@@ -16,25 +16,25 @@
 
 .about-content {
     flex: 2;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .about-content h1 {
     font-family: "Nunito", sans-serif;
     font-size: 3rem;
     font-weight: 600;
-    color: var(--third-color);
+    color: var(--fifth-color);
 }
 
 .about-content span {
-    color: var(--first-color);
+    color: var(--third-color);
 }
 
 .about-content h3 {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--third-color);
+    color: var(--fifth-color);
 }
 
 .typing-text span {
@@ -43,21 +43,21 @@
 
 .typing-text span::before {
     content: "Software Developer";
-    color: var(--first-color);
+    color: var(--third-color);
     animation: words 12s infinite;
 }
 
 .typing-text span::after {
     content: "";
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    border-left: 2px solid var(--bg-color);
+    background-color: var(--first-color);
+    color: var(--third-color);
+    border-left: 2px solid var(--first-color);
     animation: cursor 1s infinite;
 }
 
 @keyframes cursor {
     to {
-        border-left: 2px solid var(--third-color);
+        border-left: 2px solid var(--fifth-color);
     }
 }
 
@@ -76,8 +76,9 @@
 .about-content p {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.5rem;
+    font-weight: 500;
     text-align: justify;
-    color: var(--third-color);
+    color: var(--fifth-color);
 }
 
 .about-image img {
