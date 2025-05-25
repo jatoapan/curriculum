@@ -5,7 +5,9 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
+}
+
+section {
+    scroll-margin-top: calc(1.75 * var(--header-height));
 }

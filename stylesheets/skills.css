@@ -1,0 +1,229 @@
+.skills {
+    justify-content: center;
+    align-items: center;
+    padding: 0% 10% 4rem; /*up left/right bottom*/
+    gap: 4rem 0rem; /*row column*/
+}
+
+.skills-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--first-color);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.skills-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.skill-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill-subtitle {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--third-color);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skill-item {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid; 
+    transition: all 0.5s ease;
+}
+
+.skill-item a{
+    text-decoration: none;
+}
+
+.skill-item:hover{
+    transform: scale(1.1);
+    background-color: var(--header-bg-color);
+}
+
+.skill-item i {
+  font-size: 100px;
+}
+
+#power-bi {
+    border-color: var(--color-power-bi);
+}
+
+#mysql {
+    border-color: var(--color-mysql);
+}
+
+#postgresql {
+    border-color: var(--color-postgresql);
+}
+
+#sqlalchemy {
+    border-color: var(--color-sqlalchemy);
+}
+
+#python {
+    border-color: var(--color-python);
+}
+
+#markdown {
+    border-color: var(--color-markdown);
+}
+
+#jupyter {
+    border-color: var(--color-jupyter);
+}
+
+#numpy {
+    border-color: var(--color-numpy);
+}
+
+#pandas {
+    border-color: var(--color-pandas);
+}
+
+#matplotlib {
+    border-color: var(--color-matplotlib);
+}
+
+#seaborn {
+    border-color: var(--color-seaborn);
+}
+
+#scikit-learn {
+    border-color: var(--color-scikitlearn);
+}
+
+#java {
+    border-color: var(--color-java);
+}
+
+#xml {
+    border-color: var(--color-xml);
+}
+
+#android-studio {
+    border-color: var(--color-android-studio);
+}
+
+#html5 {
+    border-color: var(--color-html5);
+}
+
+#css {
+    border-color: var(--color-css);
+}
+
+#git {
+    border-color: var(--color-git);
+}
+
+#github {
+    border-color: var(--color-github);
+}
+
+#c {
+    border-color: var(--color-c);
+}
+
+#power-bi i {
+    color: var(--color-power-bi);
+}
+
+#mysql i {
+    color: var(--color-mysql);
+}
+
+#postgresql i {
+    color: var(--color-postgresql);
+}
+
+#sqlalchemy i {
+    color: var(--color-sqlalchemy);
+}
+
+#python i {
+    color: var(--color-python);
+}
+
+#markdown i {
+    color: var(--color-markdown);
+}
+
+#jupyter i {
+    color: var(--color-jupyter);
+}
+
+#numpy i {
+    color: var(--color-numpy);
+}
+
+#pandas i {
+    color: var(--color-pandas);
+}
+
+#matplotlib i {
+    color: var(--color-matplotlib);
+}
+
+#seaborn i {
+    color: var(--color-seaborn);
+}
+
+#scikit-learn i {
+    color: var(--color-scikitlearn);
+}
+
+#java i {
+    color: var(--color-java);
+}
+
+#xml i {
+    color: var(--color-xml);
+}
+
+#android-studio i {
+    color: var(--color-android-studio);
+}
+
+#html5 i {
+    color: var(--color-html5);
+}
+
+#css i {
+    color: var(--color-css);
+}
+
+#git i {
+    color: var(--color-git);
+}
+
+#github i {
+    color: var(--color-github);
+}
+
+#c i {
+    color: var(--color-c);
+}

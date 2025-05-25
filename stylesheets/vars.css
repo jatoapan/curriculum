@@ -1,8 +1,29 @@
 :root {
     --header-height: 80px;
     --header-bg-color: #0f0e17;
-    --background-color: black;
-    --text-color: white;
-    --primary-color: rgba(229, 49, 112, 1);
-    --secondary-color: rgba(229, 49, 112, 0.5);
+    --bg-color: black;
+    --border-color: #0f0e17;
+    --first-color: rgba(229, 49, 112, 1);
+    --second-color: rgba(229, 49, 112, 0.5);
+    --third-color: white;
+    --color-power-bi: #F2C811;
+    --color-mysql: #4479A1;
+    --color-postgresql: #4169E1;
+    --color-sqlalchemy: #D71F00;
+    --color-python: #3776AB;
+    --color-markdown: #FFFFFF;
+    --color-jupyter: #F37626;
+    --color-numpy: #2a4d6f;
+    --color-pandas: #3a0a7c;
+    --color-matplotlib: #11557C;
+    --color-seaborn: #43B7BA;
+    --color-scikitlearn: #F7931E;
+    --color-java: #EA2D2E;
+    --color-xml: #005FAD;
+    --color-android-studio: #3DDC84;
+    --color-html5: #E34F26;
+    --color-css: #663399;
+    --color-git: #F05032;
+    --color-github: #3a3a3a;
+    --color-c: #A8B9CC;
 }

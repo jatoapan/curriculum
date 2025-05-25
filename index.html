@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+     <link rel="stylesheet" href="./icons/techs/style.css">
     <link rel="stylesheet" href="./stylesheets/vars.css"></link>
     <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="stylesheet" href="./stylesheets/header.css"></link>
@@ -23,7 +24,7 @@
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item"><a href="#about">About</a></li>
-                <li class="header-nav-item"><a href="#">Skills</a></li>
+                <li class="header-nav-item"><a href="#skills">Skills</a></li>
                 <li class="header-nav-item"><a href="#">Experience</a></li>
                 <li class="header-nav-item"><a href="#">Projects</a></li>
                 <li class="header-nav-item"><a href="#">Education</a></li> 
@@ -33,29 +34,65 @@
         </nav>
     </header>
     <main>
-        <div id="about" class="header-placeholder"></div>
-        <section class="about">
+        <div class="header-placeholder"></div>
+        <section id="about" class="about">
             <div class="about-content">
                 <h1>Hey, I'm <span>José Toapanta</span></h1>
                 <h3 class="typing-text">I'm a <span></span></h3>
-                <p>From Ecuador, experienced in databases, advanced analysis, and mobile app development. Passionate about learning new technologies and applying them to solve real-world problems.</p>
+                <p>From Ecuador, experienced in databases, advanced analysis, and mobile app development. Passionate about learning new techs and applying them to solve real-world problems.</p>
             </div>
             <div class="about-image">
-                <img src="./images/logo.png">
+                <img src="./images/profile.png" alt="José Toapanta"/>
             </div>
         </section>
+        <section id="skills" class="skills">
+            <h2 class="skills-title">Skills</h2>
+                <div class="skills-sections">
+                    <div class="skill-section">
+                        <h3 class="skill-subtitle">Data Analysis</h3>
+                        <ul class="skills-list">
+                        <li id="power-bi" class="skill-item"><a href="https://www.microsoft.com/es-es/power-platform/products/power-bi"><i class="icon-power-bi"></i></a></li>
+                        <li id="mysql" class="skill-item"><a href="https://www.mysql.com/"><i class="icon-mysql"></i></a></li>
+                        <li id="postgresql" class="skill-item"><a href="https://www.postgresql.org/"><i class="icon-postgresql"></i></a></li>
+                        <li id="sqlalchemy" class="skill-item"><a href="https://www.sqlalchemy.org/"><i class="icon-sqlalchemy"></i></a></li>
+                        <li id="python" class="skill-item"><a href="https://www.python.org/"><i class="icon-python"></i></a></li>
+                        <li id="markdown" class="skill-item"><a href="https://www.markdownguide.org/"><i class="icon-markdown"></i></a></li>
+                        <li id="jupyter" class="skill-item"><a href="https://jupyter.org/"><i class="icon-jupyter"></i></a></li>
+                        <li id="numpy" class="skill-item"><a href="https://numpy.org/"><i class="icon-numpy"></i></a></li>
+                        <li id="pandas" class="skill-item"><a href="https://pandas.pydata.org/"><i class="icon-pandas"></i></a></li>
+                        <li id="matplotlib" class="skill-item"><a href="https://matplotlib.org/"><i class="icon-matplotlib"></i></a></li>
+                        <li id="seaborn" class="skill-item"><a href="https://seaborn.pydata.org/"><i class="icon-seaborn"></i></a></li>
+                        <li id="scikit-learn" class="skill-item"><a href="https://scikit-learn.org"><i class="icon-scikitlearn"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="skill-section">
+                        <h3 class="skill-subtitle">Mobile & Web Development</h3>
+                        <ul class="skills-list">
+                        <li id="java" class="skill-item"><a href="https://www.java.com"><i class="icon-java"></i></a></li>
+                        <li id="xml" class="skill-item"><a href="https://www.xml.com/"><i class="icon-xml"></i></a></li>
+                        <li id="android-studio" class="skill-item"><a href="https://developer.android.com"><i class="icon-android-studio"></i></a></li>
+                        <li id="html5" class="skill-item"><a href="https://html5.org/"><i class="icon-html5"></i></a></li>
+                        <li id="css" class="skill-item"><a href="https://www.w3.org/Style/CSS/Overview.en.html"><i class="icon-css"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="skill-section">
+                        <h3 class="skill-subtitle">Other</h3>
+                        <ul class="skills-list">
+                        <li id="git" class="skill-item"><a href="https://git-scm.com/"><i class="icon-git"></i></a></li>
+                        <li id="github" class="skill-item"><a href="https://github.com/"><i class="icon-github"></i></a></li>
+                        <li id="c" class="skill-item"><a href="https://www.c-language.org/"><i class="icon-c"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
         </section>
-        <section id="skills">
-            <h2 class="subtitle">Skills</h2>
+        <section id="experience" class="experience">
+            <h2 class="experience-title">Experience</h2>
         </section>
-        <section id="experience">
-            <h2 class="subtitle">Experience</h2>
+        <section id="projects" class="projects">
+            <h2 class="projects-title">Projects</h2>
         </section>
-        <section id="projects">
-            <h2 class="subtitle">Projects</h2>
-        </section>
-        <section id="educacion">
-            <h2 class="subtitle">Skills</h2>
+        <section id="education" class="education">
+            <h2 class="education-title">Skills</h2>
             <table>
                 <tr>
                     <th></th>
