@@ -1,6 +1,6 @@
 .header-placeholder {
     width: 100%;
-    height: calc(1.75 * var(--header-height));
+    height: var(--header-height);
 }
 
 header {
@@ -48,7 +48,7 @@ header {
 }
 
 .header-nav-item:hover {
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     transform: scale(1.1);
 }
 

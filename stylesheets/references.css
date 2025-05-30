@@ -1,0 +1,124 @@
+.references {
+    display: grid;
+    padding: 0 10%;
+    grid-template-areas:"title title title"
+                         "section1 section2 section3";
+    gap: 4rem 10%;
+}
+
+.references-title {
+    grid-area: title;
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--third-color);
+    text-align: center;
+}
+
+#first-reference {
+    grid-area: section1; 
+}
+
+#second-reference {
+    grid-area: section2; 
+}
+
+#third-reference {
+    grid-area: section3; 
+}
+
+.reference-section {
+    border: 2px solid var(--fifth-color);
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+
+.reference-section:hover {
+    background-color: var(--second-color);
+    border-color: var(--third-color);
+    transform: scale(1.01) translateY(-0.5rem);
+    box-shadow: 0 0 20px var(--third-color);
+}
+
+.reference-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: all 0.5s ease;
+}
+
+.reference-section:hover img {
+    border-color: var(--fifth-color);
+    box-shadow: 0 0 20px var(--fifth-color);
+}
+
+.reference-section img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.reference-section > figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.reference-section > figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: content;
+    align-self: flex-start;
+    gap: 1rem;
+}
+
+.reference-quote, .reference-name, .reference-detail {
+    color: var(--fifth-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+.reference-position {
+    color: var(--third-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+.reference-name, .reference-position {
+    font-size: 1.25rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.reference-quote {
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+.reference-detail{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    .references {
+        grid-template-areas:
+            "title title"
+            "section1 section2"
+            "section3  section3";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .references {
+        grid-template-areas:
+            "title"
+            "section1"
+            "section2"
+            "section3";
+    }
+}

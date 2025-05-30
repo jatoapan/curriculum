@@ -8,6 +8,12 @@ body {
     background-color: var(--first-color);
 }
 
+main {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
 main > section {
     scroll-margin-top: calc(1.75 * var(--header-height));
 }

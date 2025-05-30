@@ -1,13 +1,15 @@
 .skills {
-    display: flex; 
-    flex-direction: column; /*combinacion de flex y column es para evitar meter padding debajo del titulo*/
-    justify-content: center;
-    align-items: center;
-    padding: 0% 10% 4rem; /*up left/right bottom*/
-    gap: 4rem 0rem; /*row column*/
+    display: grid; 
+    padding: 0% 10%;
+    gap: 4rem 10%; 
+    grid-template-areas:
+        "title title"
+        "section1 section1"
+        "section2 section3";
 }
 
 .skills-title {
+    grid-area: title;
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 500;
@@ -15,19 +17,23 @@
     text-align: center;
 }
 
-.skills-sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+#data-analysis-section {
+    grid-area: section1;
+}
+
+#mobile-web-section {
+    grid-area: section2;
+}
+
+#other-section {
+    grid-area: section3;
 }
 
 .skill-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    align-self: self-start;
     gap: 4rem;
 }
 
@@ -59,171 +65,188 @@
     text-decoration: none;
 }
 
-.skill-item:hover{
-    transform: scale(1.1);
-    background-color: var(--second-color);
-}
-
 .skill-item i {
   font-size: 100px;
+  transition: all 0.5s ease;
 }
 
-#power-bi {
+.power-bi {
     border-color: var(--color-power-bi);
 }
 
-#mysql {
+.mysql {
     border-color: var(--color-mysql);
 }
 
-#postgresql {
+.postgresql {
     border-color: var(--color-postgresql);
 }
 
-#sqlalchemy {
+.sqlalchemy {
     border-color: var(--color-sqlalchemy);
 }
 
-#python {
+.python {
+    
     border-color: var(--color-python);
 }
-
-#markdown {
+.markdown {
     border-color: var(--color-markdown);
 }
 
-#jupyter {
+.jupyter {
     border-color: var(--color-jupyter);
 }
 
-#numpy {
+.numpy {
     border-color: var(--color-numpy);
 }
 
-#pandas {
+.pandas {
     border-color: var(--color-pandas);
 }
 
-#matplotlib {
+.matplotlib {
     border-color: var(--color-matplotlib);
 }
 
-#seaborn {
+.seaborn {
     border-color: var(--color-seaborn);
 }
 
-#scikit-learn {
+.scikit-learn {
     border-color: var(--color-scikitlearn);
 }
 
-#java {
+.java {
     border-color: var(--color-java);
 }
 
-#xml {
+.xml {
     border-color: var(--color-xml);
 }
 
-#android-studio {
+.android-studio {
     border-color: var(--color-android-studio);
 }
 
-#html5 {
+.html5 {
     border-color: var(--color-html5);
 }
 
-#css {
+.css {
     border-color: var(--color-css);
 }
 
-#git {
+.git {
     border-color: var(--color-git);
 }
 
-#github {
+.github {
     border-color: var(--color-github);
 }
 
-#c {
+.c {
     border-color: var(--color-c);
 }
 
-#power-bi i {
+.power-bi i {
     color: var(--color-power-bi);
 }
 
-#mysql i {
+.mysql i {
     color: var(--color-mysql);
 }
 
-#postgresql i {
+.postgresql i {
     color: var(--color-postgresql);
 }
 
-#sqlalchemy i {
+.sqlalchemy i {
     color: var(--color-sqlalchemy);
 }
 
-#python i {
+.python i {
     color: var(--color-python);
 }
 
-#markdown i {
+.markdown i {
     color: var(--color-markdown);
 }
 
-#jupyter i {
+.jupyter i {
     color: var(--color-jupyter);
 }
 
-#numpy i {
+.numpy i {
     color: var(--color-numpy);
 }
 
-#pandas i {
+.pandas i {
     color: var(--color-pandas);
 }
 
-#matplotlib i {
+.matplotlib i {
     color: var(--color-matplotlib);
 }
 
-#seaborn i {
+.seaborn i {
     color: var(--color-seaborn);
 }
 
-#scikit-learn i {
+.scikit-learn i {
     color: var(--color-scikitlearn);
 }
 
-#java i {
+.java i {
     color: var(--color-java);
 }
 
-#xml i {
+.xml i {
     color: var(--color-xml);
 }
 
-#android-studio i {
+.android-studio i {
     color: var(--color-android-studio);
 }
 
-#html5 i {
+.html5 i {
     color: var(--color-html5);
 }
 
-#css i {
+.css i {
     color: var(--color-css);
 }
 
-#git i {
+.git i {
     color: var(--color-git);
 }
 
-#github i {
+.github i {
     color: var(--color-github);
 }
 
-#c i {
+.c i {
     color: var(--color-c);
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    background-color: var(--second-color);
+    border-color: var(--fifth-color);
+    box-shadow: 0 0 10px var(--fifth-color);
+}
+
+.skill-item:hover i {
+    color: var(--fifth-color);
+}
+
+@media screen and (max-width: 1080px) {
+    .skills {
+        grid-template-areas:
+            "title"
+            "section1"
+            "section2"
+            "section3";
+    }
 }

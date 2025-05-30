@@ -1,7 +1,7 @@
 :root {
     --header-height: 80px;
     --first-color: black;
-    --second-color: #0f0e17;
+    --second-color: rgba(34, 34, 51, 1);
     --third-color: rgba(229, 49, 112, 1);
     --fourth-color: rgba(229, 49, 112, 0.5);
     --fifth-color: white;
@@ -10,7 +10,7 @@
     --color-postgresql: #4169E1;
     --color-sqlalchemy: #D71F00;
     --color-python: #3776AB;
-    --color-markdown: #FFFFFF;
+    --color-markdown: #444444;
     --color-jupyter: #F37626;
     --color-numpy: #2a4d6f;
     --color-pandas: #3a0a7c;
