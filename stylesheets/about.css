@@ -1,40 +1,39 @@
 .about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 0% 10%; /*up/bottom left/right*/
-    gap: 4rem 10%; /*row column*/
-}
-
-.about-image {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex: 1;
+    padding: 0% 10%;
 }
 
-.about-content {
-    flex: 2;
-    min-width: 400px;
+.about > figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem 10%;
+}
+
+.about-img {
+    max-width: 30%;
+    min-width: 264px;
+    border-radius: 50%;
 }
 
 .about-content h1 {
     font-family: "Nunito", sans-serif;
     font-size: 3rem;
     font-weight: 600;
-    color: var(--fifth-color);
+    color: var(--sixth-color);
 }
 
 .about-content span {
-    color: var(--third-color);
+    color: var(--fourth-color);
 }
 
 .about-content h3 {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--fifth-color);
+    color: var(--sixth-color);
 }
 
 .typing-text span {
@@ -43,21 +42,21 @@
 
 .typing-text span::before {
     content: "Software Developer";
-    color: var(--third-color);
+    color: var(--fourth-color);
     animation: words 12s infinite;
 }
 
 .typing-text span::after {
     content: "";
     background-color: var(--first-color);
-    color: var(--third-color);
+    color: var(--fourth-color);
     border-left: 2px solid var(--first-color);
     animation: cursor 1s infinite;
 }
 
 @keyframes cursor {
     to {
-        border-left: 2px solid var(--fifth-color);
+        border-left: 2px solid var(--sixth-color);
     }
 }
 
@@ -78,11 +77,19 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-align: justify;
-    color: var(--fifth-color);
+    color: var(--sixth-color);
 }
 
-.about-image img {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
+@media screen and (max-width: 1100px) {
+    .about > figure {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-img {
+        max-width: 264px;
+        min-width: 0;
+        width: 100%;
+    }
 }

@@ -26,7 +26,7 @@ header {
     font-size: 2rem;
     padding-left: 1rem;
     font-weight: 800;
-    color: var(--third-color);
+    color: var(--fourth-color);
     transition: all 0.5s ease;
 }
 
@@ -48,7 +48,7 @@ header {
 }
 
 .header-nav-item:hover {
-    background-color: var(--third-color);
+    background-color: var(--fifth-color);
     transform: scale(1.1);
 }
 
@@ -57,5 +57,5 @@ header {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--fifth-color);
+    color: var(--sixth-color);
 }

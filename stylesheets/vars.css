@@ -2,9 +2,10 @@
     --header-height: 80px;
     --first-color: black;
     --second-color: rgba(34, 34, 51, 1);
-    --third-color: rgba(229, 49, 112, 1);
-    --fourth-color: rgba(229, 49, 112, 0.5);
-    --fifth-color: white;
+    --third-color: rgba(34, 34, 51, 0.5);
+    --fourth-color: rgba(229, 49, 112, 1);
+    --fifth-color: rgba(229, 49, 112, 0.5);
+    --sixth-color: white;
     --color-power-bi: #F2C811;
     --color-mysql: #4479A1;
     --color-postgresql: #4169E1;

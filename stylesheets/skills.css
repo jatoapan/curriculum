@@ -1,7 +1,7 @@
 .skills {
     display: grid; 
     padding: 0% 10%;
-    gap: 4rem 10%; 
+    gap: 4rem; 
     grid-template-areas:
         "title title"
         "section1 section1"
@@ -13,7 +13,7 @@
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    color: var(--third-color);
+    color: var(--fourth-color);
     text-align: center;
 }
 
@@ -34,14 +34,17 @@
     flex-direction: column;
     align-items: center;
     align-self: self-start;
-    gap: 4rem;
+    gap: 2rem;
+    background: var(--third-color);
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .skill-subtitle {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--fifth-color);
+    color: var(--sixth-color);
     text-align: center;
 }
 
@@ -49,6 +52,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -59,15 +63,16 @@
     padding: 1rem 1rem;
     border: 2px solid; 
     transition: all 0.5s ease;
+    background-color: var(--first-color);
 }
 
-.skill-item a{
+.skill-item a {
     text-decoration: none;
 }
 
 .skill-item i {
-  font-size: 100px;
-  transition: all 0.5s ease;
+    font-size: 100px;
+    transition: all 0.5s ease;
 }
 
 .power-bi {
@@ -233,15 +238,15 @@
 .skill-item:hover {
     transform: scale(1.1);
     background-color: var(--second-color);
-    border-color: var(--fifth-color);
-    box-shadow: 0 0 10px var(--fifth-color);
+    border-color: var(--sixth-color);
+    box-shadow: 0 0 10px var(--sixth-color);
 }
 
 .skill-item:hover i {
-    color: var(--fifth-color);
+    color: var(--sixth-color);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
     .skills {
         grid-template-areas:
             "title"

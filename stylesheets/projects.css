@@ -1,0 +1,99 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    gap: 4rem;
+}
+
+.projects-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--fourth-color);
+    text-align: center;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--third-color);
+}
+
+.project-item {
+    border: 2px solid var(--sixth-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    max-width: 405px;
+}
+
+.project-article > figure {
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.project-content {
+    width: 100%;
+    height: 100%;
+    background: var(--third-color);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    padding: 2rem;
+}
+
+.project-content > h3 {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--sixth-color);
+}
+
+.project-content > p {
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--sixth-color);
+}
+
+.project-item:hover {
+    box-shadow: 0 0 20px var(--sixth-color);
+}
+
+.project-item:hover .project-img{
+    transform: scale(1.1);
+}
+
+.project-item:hover .project-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .reference-item {
+        max-width: 360px;;
+    }
+}

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./stylesheets/skills.css"></link>
     <link rel="stylesheet" href="./stylesheets/experience-education.css"></link>
     <link rel="stylesheet" href="./stylesheets/references.css"></link>
+    <link rel="stylesheet" href="./stylesheets/projects.css"></link>
     <title>José Toapanta - Curriculum Vitae</title>
 </head>
 <body>
@@ -30,21 +31,21 @@
                 <li class="header-nav-item"><a href="#experience-education">Experience</a></li>
                 <li class="header-nav-item"><a href="#experience-education">Education</a></li>
                 <li class="header-nav-item"><a href="#references">References</a></li>
+                <li class="header-nav-item"><a href="#projects">Projects</a></li>
                 <li class="header-nav-item"><a href="#">Contact</a></li> 
-                <li class="header-nav-item"><a href="#">Projects</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="header-placeholder"></div>
         <section id="about" class="about">
-            <div class="about-content">
-                <h1>Hey, I'm <span>José Toapanta</span></h1>
-                <h3 class="typing-text">I'm a <span></span></h3>
-                <p>From Ecuador, experienced in databases, advanced analysis, and mobile app development. Passionate about learning new techs and applying them to solve real-world problems.</p>
-            </div>
-            <figure class="about-image">
-                <img src="./images/profile.png" alt="José Toapanta"/>
+            <figure>
+                <figcaption class="about-content">
+                    <h1>Hey, I'm <span>José Toapanta</span></h1>
+                    <h3 class="typing-text">I'm a <span></span></h3>
+                    <p>From Ecuador, experienced in databases, advanced analysis, and mobile app development. Passionate about learning new techs and applying them to solve real-world problems.</p>
+                </figcaption>
+                <img class="about-img" src="./images/profile.png" alt="José Toapanta"/>
             </figure>
         </section>
         <section id="skills" class="skills">
@@ -148,57 +149,102 @@
                 </ul>
             </section>
         </section>
-        <section id="references" class="references">
-            <h2 class="references-title">Referencias</h2>
-            <article id="first-reference" class="reference-section">
-                <figure>
-                    <img src="./images/profile.png" alt="María Pérez" class="reference-img">
-                    <blockquote class="reference-quote">
-                        "José demostró gran responsabilidad y compromiso en todos los proyectos asignados."
-                    </blockquote>
-                    <figcaption>
-                        <h3 class="reference-name">María Pérez</h3>
-                        <h4 class="reference-position">Gerente de Proyectos en Empresa X</h4>
-                        <p class="reference-detail">
-                            Trabajó con José durante dos años en el área de desarrollo de software, destacando su capacidad para
-                            resolver problemas y trabajar en equipo.
-                        </p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article id="second-reference" class="reference-section">
-                <figure>
-                    <img src="./images/profile.png" alt="Carlos Gómez" class="reference-img">
-                    <blockquote class="reference-quote">
-                    "Siempre mostró iniciativa y creatividad en la solución de retos técnicos."
-                    </blockquote>
-                    <figcaption>
-                        <h3 class="reference-name">Carlos Gómez</h3>
-                        <h4 class="reference-position">Líder Técnico en Soluciones TI</h4>
-                        <p class="reference-detail">
-                            Colaboró con José en varios proyectos de integración de sistemas, resaltando su profesionalismo y habilidades técnicas.
-                        </p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article id="third-reference" class="reference-section">
-                <figure>
-                    <img src="./images/profile.png" alt="Ana Torres" class="reference-img">
-                    <blockquote class="reference-quote">
-                    "Su actitud positiva y disposición para aprender lo convierten en un valioso miembro del equipo."
-                    </blockquote>
-                    <figcaption>
-                        <h3 class="reference-name">Ana Torres</h3>
-                        <h4 class="reference-position">Jefa de Innovación en Tech Innovators</h4>
-                        <p class="reference-detail">
-                            Supervisó a José en prácticas profesionales, donde demostró adaptabilidad y excelentes habilidades de comunicación.
-                        </p>
-                    </figcaption>
-                </figure>
-            </article>
-        </section>
         <section id="projects" class="projects">
             <h2 class="projects-title">Projects</h2>
+            <ul class="projects-list">
+                <li class="project-item">
+                    <article id="first-project " class="project-article">
+                        <figure>
+                            <img class="project-img" src="./images/first-proyect.png" alt="Aproximación De Traza">
+                            <figcaption class="project-content">
+                                <h3 class="project-title">First Project</h3>
+                                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href=""></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article id="second-project" class="project-article">
+                        <figure>
+                            <img class="project-img" src="./images/first-proyect.png" alt="Juego Cartas Uno">
+                            <figcaption class="project-content">
+                                <h3 class="project-title">Second Project</h3>
+                                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href=""></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article id="third-project" class="project-article">
+                        <figure>
+                            <img class="project-img" src="./images/first-proyect.png" alt="Customer Segmentation Dashboard">
+                            <figcaption class="project-content">
+                                <h3 class="project-title">Third Project</h3>
+                                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href=""></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="references" class="references">
+            <h2 class="references-title">References</h2>
+            <ul class="references-list">
+                <li class="reference-item">
+                    <article id="first-reference" class="reference-article">
+                        <figure>
+                            <img class="reference-img" src="./images/profile.png" alt="María Pérez">
+                            <figcaption class="reference-content">
+                                <blockquote class="reference-quote">
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                                </blockquote>
+                                <h3 class="reference-name">Name</h3>
+                                <h4 class="reference-position">Position</h4>
+                                <p class="reference-detail">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et hic nostrum voluptate amet omnis recusandae dignissimos quaerat nobis laboriosam sed quasi, neque labore nam vitae, debitis, dolorum dolores fugit.
+                                </p>
+                            </figcaption>
+                    </figure>
+                    </article>
+                </li>
+                <li class="reference-item">
+                    <article id="second-reference" class="reference-article">
+                        <figure>
+                            <img class="reference-img" src="./images/profile.png" alt="Carlos Gómez">
+                            <figcaption class="reference-content">
+                                <blockquote class="reference-quote">
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                                </blockquote>
+                                <h3 class="reference-name">Name</h3>
+                                <h4 class="reference-position">Position</h4>
+                                <p class="reference-detail">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et hic nostrum voluptate amet omnis recusandae dignissimos quaerat nobis laboriosam sed quasi, neque labore nam vitae, debitis, dolorum dolores fugit.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li class="reference-item">
+                    <article id="third-reference" class="reference-article">
+                        <figure>
+                            <img class="reference-img" src="./images/profile.png" alt="Ana Torres">
+                            <figcaption class="reference-content">
+                                <blockquote class="reference-quote">
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                                </blockquote>
+                                <h3 class="reference-name">Name</h3>
+                                <h4 class="reference-position">Position</h4>
+                                <p class="reference-detail">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et hic nostrum voluptate amet omnis recusandae dignissimos quaerat nobis laboriosam sed quasi, neque labore nam vitae, debitis, dolorum dolores fugit.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+            </ul>
         </section>
         <section id="contact">
             <form action="#" method="post">
@@ -213,7 +259,6 @@
                     <option value="pasantia">Oportunidad de pasantia</option>
                     <option value="otro">Otro</option>
                 </select>
-
                 <fieldset>
                     <legend>¿Cómo prefiere ser contactado?</legend>
                     <label><input type="radio" name="contacto" value="email" required> Email</label>
@@ -237,7 +282,7 @@
                 <button type="submit" style="width:100%;">Enviar</button>
             </form>
         </section>
-        <section id="proyectos">
+        <section id="pr">
             <h2 class="subtitle">Proyectos</h2>
             <ol>
                 <li>Aproximación De Traza</li>
