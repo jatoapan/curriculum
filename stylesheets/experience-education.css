@@ -1,5 +1,6 @@
 .experience-education {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
         "title title"
         "section1 section2";
@@ -29,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     align-self: flex-start;
-    gap: 4rem;
+    gap: 2rem;
     background-color: var(--third-color);
     padding: 2rem;
     border-radius: 1rem;
@@ -145,6 +146,7 @@
 
 @media screen and (max-width: 1280px) {
     .experience-education {
+        grid-template-columns: 1fr;
         grid-template-areas:
             "title"
             "section1"

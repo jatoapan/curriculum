@@ -55,7 +55,7 @@ header {
 .header-nav-item a {
     text-decoration: none;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--sixth-color);
 }

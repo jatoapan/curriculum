@@ -8,6 +8,7 @@
     <meta name="description" content="Software and Web Developer, and Data Analyst, passionate about Technology" />
     <meta name="author" content="José Toapanta" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
     <link rel="stylesheet" href="./icons/techs/style.css">
@@ -17,8 +18,9 @@
     <link rel="stylesheet" href="./stylesheets/about.css"></link>
     <link rel="stylesheet" href="./stylesheets/skills.css"></link>
     <link rel="stylesheet" href="./stylesheets/experience-education.css"></link>
-    <link rel="stylesheet" href="./stylesheets/references.css"></link>
     <link rel="stylesheet" href="./stylesheets/projects.css"></link>
+    <link rel="stylesheet" href="./stylesheets/references.css"></link>
+        <link rel="stylesheet" href="./stylesheets/contact.css"></link>
     <title>José Toapanta - Curriculum Vitae</title>
 </head>
 <body>
@@ -30,9 +32,9 @@
                 <li class="header-nav-item"><a href="#skills">Skills</a></li>
                 <li class="header-nav-item"><a href="#experience-education">Experience</a></li>
                 <li class="header-nav-item"><a href="#experience-education">Education</a></li>
-                <li class="header-nav-item"><a href="#references">References</a></li>
                 <li class="header-nav-item"><a href="#projects">Projects</a></li>
-                <li class="header-nav-item"><a href="#">Contact</a></li> 
+                <li class="header-nav-item"><a href="#references">References</a></li>
+                <li class="header-nav-item"><a href="#contact">Contact</a></li> 
             </ul>
         </nav>
     </header>
@@ -159,7 +161,7 @@
                             <figcaption class="project-content">
                                 <h3 class="project-title">First Project</h3>
                                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <a href=""></a>
+                                <a href="https://github.com/jatoapan/Aproximacion_De_Traza"><i class="fa-solid fa-link"></i></a>
                             </figcaption>
                         </figure>
                     </article>
@@ -171,7 +173,7 @@
                             <figcaption class="project-content">
                                 <h3 class="project-title">Second Project</h3>
                                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <a href=""></a>
+                                <a href="https://github.com/jatoapan/Juego_Cartas_Uno"><i class="fa-solid fa-link"></i></a>
                             </figcaption>
                         </figure>
                     </article>
@@ -183,7 +185,7 @@
                             <figcaption class="project-content">
                                 <h3 class="project-title">Third Project</h3>
                                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <a href=""></a>
+                                <a href="https://github.com/davexat/Customer_Segmentation_Dashboard"><i class="fa-solid fa-link"></i></a>
                             </figcaption>
                         </figure>
                     </article>
@@ -203,8 +205,8 @@
                                 </blockquote>
                                 <h3 class="reference-name">Name</h3>
                                 <h4 class="reference-position">Position</h4>
-                                <p class="reference-detail">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et hic nostrum voluptate amet omnis recusandae dignissimos quaerat nobis laboriosam sed quasi, neque labore nam vitae, debitis, dolorum dolores fugit.
+                                <p class="reference-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </figcaption>
                     </figure>
@@ -220,8 +222,8 @@
                                 </blockquote>
                                 <h3 class="reference-name">Name</h3>
                                 <h4 class="reference-position">Position</h4>
-                                <p class="reference-detail">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et hic nostrum voluptate amet omnis recusandae dignissimos quaerat nobis laboriosam sed quasi, neque labore nam vitae, debitis, dolorum dolores fugit.
+                                <p class="reference-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </figcaption>
                         </figure>
@@ -237,8 +239,8 @@
                                 </blockquote>
                                 <h3 class="reference-name">Name</h3>
                                 <h4 class="reference-position">Position</h4>
-                                <p class="reference-detail">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et hic nostrum voluptate amet omnis recusandae dignissimos quaerat nobis laboriosam sed quasi, neque labore nam vitae, debitis, dolorum dolores fugit.
+                                <p class="reference-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </figcaption>
                         </figure>
@@ -246,60 +248,39 @@
                 </li>
             </ul>
         </section>
-        <section id="contact">
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required style="width:100%; margin-bottom:12px;">
-
-                <label for="motivo">Motivo de contacto:</label>
-                <select id="motivo" name="motivo" required style="width:100%; margin-bottom:12px;">
-                    <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="trabajo">Oportunidad de trabajo</option>
-                    <option value="pasantia">Oportunidad de pasantia</option>
-                    <option value="otro">Otro</option>
-                </select>
-                <fieldset>
-                    <legend>¿Cómo prefiere ser contactado?</legend>
-                    <label><input type="radio" name="contacto" value="email" required> Email</label>
-                    <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
-                    <label><input type="radio" name="contacto" value="whatsapp" required> WhatsApp</label>
-                </fieldset>
-
-                <label for="intereses">Áreas de interés:</label>
-                <select id="intereses" name="intereses[]" multiple required style="width:100%; margin-bottom:12px;">
-                    <option value="desarrollo">Desarrollo Web</option>
-                    <option value="datos">Ciencia de Datos</option>
-                    <option value="ia">Inteligencia Artificial</option>
-                    <option value="iot">IoT</option>
-                    <option value="otros">Otros</option>
-                </select>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required
-                    style="width:100%; margin-bottom:12px;"></textarea>
-
-                <button type="submit" style="width:100%;">Enviar</button>
-            </form>
-        </section>
-        <section id="pr">
-            <h2 class="subtitle">Proyectos</h2>
-            <ol>
-                <li>Aproximación De Traza</li>
-                <li>Juego Cartas Uno</li>
-                <li>Customer Segmentation Dashboard</li>
-                <li>Ecommerce Analytics</li>
-            </ol>
-            <p><a href="https://github.com/jatoapan/Aproximacion_De_Traza" target="_blank" rel="noopener noreferrer">https://github.com/jatoapan/Aproximacion_De_Traza</a></p>
-            <p><a href="https://github.com/jatoapan/Juego_Cartas_Uno" target="_blank" rel="noopener noreferrer">https://github.com/jatoapan/Juego_Cartas_Uno</a></p>
-            <p><a href="https://github.com/davexat/Customer_Segmentation_Dashboard" target="_blank" rel="noopener noreferrer">https://github.com/davexat/Customer_Segmentation_Dashboard</a></p>
-            <p><a href="https://github.com/jatoapan/Ecommerce_Analytics" target="_blank" rel="noopener noreferrer">https://github.com/jatoapan/Ecommerce_Analytics</a></p>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/x8LW_IH8VTY" title="Aproximación De Traza" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-        </section>
-        <section id="mapa">
-            <h2 class="subtitle">Contacto</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.020217883858!2d-79.967447500897!3d-2.1459433909952126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1747755101474!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="contact" id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <section class="form-section">
+                <h3 class="form-title">Send me an email</h3>
+                <form id="form" action="#" method="post">
+                    <fieldset class="form-group" id="form-name">
+                        <label class="form-label" for="contact-form-name">Name:</label>
+                        <input class="form-box" placeholder="Your name" type="text" id="contact-form-name" name="name" autocomplete="name" required>
+                    </fieldset>
+                    <fieldset class="form-group" id="form-email">
+                        <label class="form-label" for="contact-form-mail">Email:</label>
+                        <input class="form-box" placeholder="Your email" type="email" id="contact-form-mail" name="email" autocomplete="email" required>
+                    </fieldset>
+                    <fieldset class="form-group" id="form-topic">
+                        <label class="form-label" for="contact-form-topic">Topic:</label>
+                        <input class="form-box" placeholder="Message topic" type="text" id="contact-form-topic" name="topic" required>
+                    </fieldset>
+                    <fieldset class="form-group" id="form-message">
+                        <label class="form-label" for="contact-form-message">Message:</label>
+                        <textarea class="form-box" id="contact-form-message" name="message" rows="5" required></textarea>
+                    </fieldset>
+                    <button class="form-box" id="form-submit" type="submit" id="contact-form-submit">Send</button>
+                </form>
+            </section>
+            <figure class="map-section">
+                <p class="map-description">
+                    If you want to meet me in person, I am available from Monday to Friday. Just make sure to contact me first.
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.020217883858!2d-79.967447500897!3d-2.1459433909952126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1747755101474!5m2!1ses!2sec"
+                    class="map" title="Location map of ESPOL Faculty of Electrical and Computing Engineering" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </figure>
         </section>
     </main>
     <footer>
