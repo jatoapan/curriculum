@@ -88,15 +88,18 @@
 }
 
 #form-submit {
-    background: var(--fourth-color);
+    background: var(--third-color-);
     color: var(--sixth-color);
     font-family: "Nunito ", sans-serif;
+    border: 2px solid var(--sixth-color); 
 }
 
 #form-submit:hover {
-    background: var(--sixth-color);
+    background: var(--second-color);
     color: var(--fourth-color);
     transform: scale(1.01);
+    border-color: var(--fourth-color);
+    box-shadow: 0 0 20px var(--fourth-color);
 }
 
 .map-section {

@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--sixth-color);
+    text-align: center;
+}
+
+.footer-social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-media-icon {
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--sixth-color); 
+    font-size: 3rem;
+    color: var(--sixth-color); 
+    transition: all 0.5s ease;
+    background: var(--third-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-media-icon:hover {
+    background: var(--second-color);
+    color: var(--fourth-color);
+    border-color: var(--fourth-color);
+    box-shadow: 0 0 20px var(--fourth-color);
+    transform: scale(1.1);
+}

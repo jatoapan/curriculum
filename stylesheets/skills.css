@@ -61,7 +61,7 @@
 
 .skill-item {
     border-radius: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border: 2px solid; 
     transition: all 0.5s ease;
     background-color: var(--first-color);

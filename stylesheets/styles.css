@@ -6,6 +6,10 @@
 
 body {
     background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 4rem;
 }
 
 main {
