@@ -29,7 +29,8 @@
 }
 
 .project-item {
-    flex: 0 1 450px;
+    max-width: 400px;
+    flex: 1 1 300px;
     border: 2px solid var(--sixth-color);
     border-radius: 1rem;
     overflow: hidden;
@@ -64,7 +65,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease;
-    padding: 2rem;
+    padding: 1rem;
     gap: 1rem;
 }
 

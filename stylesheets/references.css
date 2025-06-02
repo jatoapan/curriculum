@@ -72,6 +72,10 @@
     padding: 2rem;
 }
 
+.reference-article > figure > a {
+    text-decoration: none;
+}
+
 .reference-content {
     display: flex;
     flex-direction: column;
